@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>100 Days My Prince | Information</title>
+    <link rel="stylesheet" href="100daymyprince.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="./images/logo3.png" alt=""></a>
+        <div class="toggle"><img src="./images/toggle.png" alt=""></div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2>I have to marry <span>A USELESS</span> man</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim, et cupiditate? Molestias officiis ipsam voluptates dolorum consequuntur iusto, rem quod! Aliquam quam itaque optio reiciendis veritatis corrupti dolorem sit voluptas?</p>
+            <a href="#" class="play" onclick="toggle();"><img src="./images/play.png" alt="">Watch Trailer</a>
+            <div class="slide"></div>
+            <ul class="sci">
+                <li><a href="#"><img src="./images/facebook.png" alt=""></a></li>
+                <li><a href="#"><img src="./images/twitter.png" alt=""></a></li>
+                <li><a href="#"><img src="./images/instagram.png" alt=""></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="trailer">
+        <video src="#" controls="true"></video>
+        <img src="./images/close.png" class="close" onclick="toggle();">
+    </div>
+    <script type="text/javascript">
+        function toggle(){
+            var trailer = document.querySelector('.trailer');
+            var video = document.querySelector('video');
+            trailer.classList.toggle('active');
+            video.currentTime = 0;
+            video.pause();
+        }
+    </script>
+</body>
+</html>
